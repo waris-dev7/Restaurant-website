@@ -1,0 +1,552 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 
+font-family: "Fraunces", serif;
+font-family: "Geist", sans-serif;
+*/
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #fcf6ee;
+}
+
+/* start of header */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid black;
+  background-color: #f8f3ee;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 500px;
+  z-index: 10;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header-content h3 {
+  font-family: "Fraunces", serif;
+}
+
+.header-content a {
+  font-size: 20px;
+  color: black;
+  font-family: "Geist", sans-serif;
+  padding: 5px 10px;
+  border-radius: 500px;
+  transition: 0.3s ease-in-out;
+}
+
+.header-content a:hover {
+  background-color: #f1eae1;
+}
+
+.header-content button {
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+  background-color: black;
+  border-radius: 500px;
+  color: white;
+}
+
+/* end of header */
+
+/* start of hero */
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 150px;
+  place-content: center;
+  min-height: 100vh;
+  padding: 80px;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.p {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: "Geist", sans-serif;
+}
+
+.p p {
+  color: #b64600;
+}
+
+.p .hero-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #b64600;
+  border-radius: 50%;
+}
+
+.hero-left h1 {
+  font-size: 70px;
+  font-family: "Fraunces";
+}
+
+.hero-left h4 {
+  color: #78736d;
+  font-size: 20px;
+  font-family: "Geist";
+  font-weight: 500;
+}
+
+.hero-btns button:nth-child(1) {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  border-radius: 500px;
+}
+
+.hero-btns button:nth-child(2) {
+  padding: 10px 15px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #78736d;
+  border-radius: 500px;
+}
+.hero-img {
+  height: 100%;
+  width: 500px;
+}
+
+.hero-right .hero-img img {
+  width: 500px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+}
+/* end of hero */
+
+/* start of second section */
+
+.second {
+  padding: 80px;
+  min-height: 100vh;
+}
+
+.second-title h1 {
+  font-family: "Fraunces";
+  font-size: 60px;
+}
+
+.second-title p {
+  font-size: 18px;
+  font-family: "Geist";
+  color: #78736d;
+}
+
+.second-p {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: "Geist", sans-serif;
+}
+
+.second-p .second-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #b64600;
+  border-radius: 50%;
+}
+
+.second-p p {
+  color: #b64600;
+}
+
+.second-cards {
+  display: flex;
+  gap: 24px;
+  margin-top: 40px;
+  align-items: start;
+}
+
+.second-card {
+  background-color: #f1eae1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  border-radius: 20px;
+}
+
+.second-card2 {
+  background-color: #f1eae1;
+  padding: 40px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 0.8;
+}
+
+.second-p2 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: "Geist", sans-serif;
+}
+
+.second-p2 .second-dot2 {
+  width: 10px;
+  height: 10px;
+  background-color: #b64600;
+  border-radius: 50%;
+}
+
+.second-p2 p {
+  color: #b64600;
+  margin: 0;
+}
+
+.second-card2 h3 {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  margin: 0;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.second-card2 p:nth-child(3) {
+  font-family: "Geist", sans-serif;
+  font-size: 16px;
+  color: #4b4947;
+  /* margin-top: 15px; */
+}
+
+.second-card:nth-child(1) {
+  flex: 1.3;
+}
+.second-card:nth-child(2) {
+  flex: 0.8;
+}
+.second-card:nth-child(3) {
+  flex: 1.3;
+}
+
+.second-card p:nth-child(3) {
+  font-family: "Geist";
+  font-size: 16px;
+  color: #4b4947;
+}
+
+.second-card h3 {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  line-height: 1.2;
+  margin: 0;
+  font-weight: 500;
+}
+
+@media (max-width: 968px) {
+  .second {
+    padding: 40px 20px;
+  }
+
+  .second-title h1 {
+    font-size: 40px;
+  }
+
+  .second-cards {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .second-card:nth-child(1),
+  .second-card:nth-child(2),
+  .second-card:nth-child(3),
+  .second-card2 {
+    flex: none;
+    width: 100%;
+  }
+
+  .second-card h3,
+  .second-card2 h3 {
+    font-size: 26px;
+  }
+}
+/* end of second section */
+
+/* start of third section */
+
+.third {
+  padding: 80px;
+}
+
+.third-content {
+  display: flex;
+  /* justify-content: space-evenly; */
+  column-gap: 100px;
+  background-color: #f1eae1;
+  padding: 50px 80px;
+  border-radius: 20px;
+}
+
+.third-left {
+  width: 50%;
+}
+
+.third-left h1 {
+  font-size: 60px;
+  font-family: "Fraunces";
+}
+
+.third-left p {
+  font-family: "Geist";
+  font-size: 18px;
+  color: #78736d;
+}
+
+.third-left p:nth-child(2) {
+  margin-top: 10px;
+}
+
+.third-left p:nth-child(3) {
+  margin-top: 20px;
+}
+
+.third-right {
+  display: grid;
+  place-content: center;
+}
+
+.third-p {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: "Geist", sans-serif;
+}
+
+.third-p p {
+  color: #b64600;
+}
+
+.third-p .third-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #b64600;
+  border-radius: 50%;
+}
+
+.third-card {
+  width: 400px;
+  height: 265px;
+  background-color: #fcf6ee;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.third-card h4 {
+  color: #78736d;
+  font-family: "Geist";
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.third-card button {
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-size: 17px;
+  border-radius: 500px;
+}
+
+@media (max-width: 1024px) {
+  .third {
+    padding: 20px;
+  }
+
+  .third-content {
+    flex-direction: column;
+    row-gap: 60px;
+    padding: 40px 20px;
+  }
+
+  .third-left,
+  .third-right {
+    width: 100%;
+  }
+
+  .third-left h1 {
+    font-size: 40px;
+  }
+}
+/* end of third section */
+
+/* start of fourth section */
+
+.fourth {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px 50px;
+  background-color: #15110d;
+  border-radius: 20px;
+  /* height: 350px; */
+}
+
+.fourth-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.fourth-left h1 {
+  font-size: 50px;
+  font-family: "Fraunces";
+  color: white;
+}
+
+.fourth-left p {
+  color: #78736d;
+  font-family: "geist";
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.fourth-right {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.fourth-card {
+  border: 1px solid #78736d;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.fouth-p {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: "Geist", sans-serif;
+}
+
+.fouth-p .fourth-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #b64600;
+  border-radius: 50%;
+}
+
+.fouth-p p {
+  color: #b64600;
+}
+
+.fourth-card h2 {
+  font-family: "Fraunces";
+  color: white;
+  font-size: 35px;
+  margin-top: 10px;
+}
+
+.fourth-card h4 {
+  color: #78736d;
+  font-family: "geist";
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .fourth {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .fourth-left,
+  .fourth-right {
+    width: 100%;
+  }
+
+  .fourth-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* end of fourth section */
+
+/* start of last section */
+
+.last {
+  padding: 60px 110px;
+}
+
+.last h1 {
+  font-family: "Fraunces";
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.last-line {
+  width: 100%;
+  height: 1px;
+  background-color: #c0bab4;
+  margin-top: 30px;
+}
+
+.copyright{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.copyright h4{
+  font-family: "Fraunces";
+  font-size: 17px;
+  color: #78736d;
+}
+
+.copyright p{
+  color: #78736d;
+  font-family: "geist";
+}
+
+/* end of last section */
+
+/* =====================================(that's it)!==================================== */
